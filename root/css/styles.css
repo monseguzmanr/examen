@@ -23,16 +23,6 @@ a {
     line-height: 176.1%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container > * {
-    padding: 20px;
-}
-
 .main {
     flex-grow: 1;
 }
@@ -41,6 +31,10 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    padding-left: 199px;
+    padding-top: 74.5px;
+    padding-right: 188.32px;
 }
 
 .header nav {
@@ -97,4 +91,25 @@ a {
     flex-grow: 0;
     border-style: none;
     color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .to-hidden {
+        display: none !important;
+    }
+
+    .to-show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .to-hidden {
+      display: none !important;
+    }
 }
