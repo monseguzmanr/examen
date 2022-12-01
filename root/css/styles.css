@@ -33,7 +33,6 @@ a {
 
 .header {
     justify-content: space-around;
-    padding: 74.5px 0;
     padding-left: 199px;
     padding-top: 74.5px;
     padding-right: 188.32px;
@@ -69,6 +68,7 @@ a {
 .boton {
     justify-content: center;
     align-items: center;
+
     padding: 10px;
     gap: 10px;
     width: 134px;
@@ -95,17 +95,24 @@ a {
     justify-content: center;
 }
 
-.banner {
-    width: 90%;
-    margin: auto;
+.align-to-end {
+    justify-content: flex-end;
 }
 
-.banner-title {
+.banner {
+    padding-left: 199px;
+    padding-top: 74.5px;
+    gap: 10px;
+    width: auto;
+}
+
+.banner-legend {
     width: 450px;
     height: 228px;
+    gap: 30px;
 }
 
-.banner-title h1 {
+.banner-legend h1 {
     font-weight: 700;
     font-size: 50px;
     line-height: 114.6%;
@@ -119,7 +126,7 @@ a {
     color: #232C50;
 }
 
-.banner-title h4 {
+.banner-legend h4 {
     font-weight: 500;
     font-size: 16.5584px;
     line-height: 157.1%;
@@ -127,4 +134,45 @@ a {
     align-items: center;
     text-align: right;
     color: #000000;
+}
+
+.central-bar {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background: #8B48BF;
+    height: 168px;
+    margin-top: 80px;;
+}
+
+.central-bar h1 {
+    width: 450px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+    /* or 41px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.central-bar h4 {
+    width: 450px;
+    height: 88px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.1%;
+    /* or 24px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.central-bar-text {
+    gap: 200px;
 }
