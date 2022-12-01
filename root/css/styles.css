@@ -23,36 +23,32 @@ a {
     line-height: 176.1%;
 }
 
-.main {
-    flex-grow: 1;
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-
+    padding: 74.5px 0;
     padding-left: 199px;
     padding-top: 74.5px;
     padding-right: 188.32px;
 }
 
 .header nav {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 .header img {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
 }
 
 .header ul {
-    display: flex;
     order: 1;
     width: 100%;
     margin-top: 15px;
@@ -70,19 +66,13 @@ a {
     cursor: pointer;
 }
 
-
 .boton {
-    
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
     gap: 10px;
-    
     width: 134px;
     height: 44px;
-    
     background: #8B48BF;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
@@ -93,23 +83,48 @@ a {
     color: #fff;
 }
 
-@media screen and (max-width: 480px) {
-    .to-hidden {
-        display: none !important;
-    }
-
-    .to-show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-        justify-content: center;
-    }
+.padle-intro {
+    width: auto;
 }
 
-@media screen and (min-width: 481px) {
-    .to-hidden {
-      display: none !important;
-    }
+.content-with-space-between {
+    justify-content: space-between;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.banner {
+    width: 90%;
+    margin: auto;
+}
+
+.banner-title {
+    width: 450px;
+    height: 228px;
+}
+
+.banner-title h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 114.6%;
+    /* or 57px */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.035em;
+
+    color: #232C50;
+}
+
+.banner-title h4 {
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 157.1%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
 }
