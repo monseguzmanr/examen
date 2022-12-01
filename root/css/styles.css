@@ -75,7 +75,16 @@ a {
 .content-center {
     justify-content: center;
     align-items: center;
+    gap: 150px;
 }
+
+.content-center-header {
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-bottom: 10%;
+}
+
 
 .center-space-arround {
     justify-content: space-around;
@@ -93,17 +102,14 @@ a {
 }
 
 .banner {
-    padding-left: 199px;
-    padding-top: 74.5px;
-    gap: 10px;
-    width: auto;
+    flex-wrap: wrap;
 }
 
 .banner-legend {
     width: 450px;
     height: 228px;
     justify-content: space-around;
-    gap: 5px;
+    gap: 20px;
 }
 
 .banner-legend h1 {
@@ -179,7 +185,13 @@ header {
     display: none;
 }
 
+
 @media screen and (max-width: 500px) {
+
+    .paddle-img {
+        margin-top: 10%;
+        width: 80%;
+    }
 
     .header-nav, .contact-menu-btn {
         display: none;
@@ -190,3 +202,4 @@ header {
     }
     
 }
+
