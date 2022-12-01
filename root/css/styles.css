@@ -101,7 +101,7 @@ a {
     justify-content: flex-end;
 }
 
-.banner {
+.wrap {
     flex-wrap: wrap;
 }
 
@@ -139,10 +139,9 @@ a {
 .central-bar {
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     background: #8B48BF;
-    height: 168px;
-    margin-top: 80px;;
+    padding: 50px;
 }
 
 .central-bar h1 {
@@ -199,6 +198,14 @@ header {
 
     .burger {
         display: block;
+    }
+
+    .central-bar {
+        background: #3CDDF3;
+    }
+
+    .central-bar-text {
+        gap: 20px;
     }
     
 }
