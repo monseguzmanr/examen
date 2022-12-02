@@ -49,6 +49,16 @@ a {
     cursor: pointer;
 }
 
+.purple {
+    background: #8B48BF;
+    color: #fff;
+}
+
+.got-it-btn {
+    background: #FFFFFF;
+    color: #8B48BF;
+}
+
 .boton {
     display: flex;
     justify-content: center;
@@ -57,14 +67,12 @@ a {
     gap: 10px;
     width: 134px;
     height: 44px;
-    background: #8B48BF;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     flex: none;
     order: 2;
     flex-grow: 0;
     border-style: none;
-    color: #fff;
 }
 
 .second-section {
@@ -75,10 +83,13 @@ a {
     flex-wrap: wrap;
 }
 
-#third-section {
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 150px;
+    flex-wrap: wrap;
 }
-
 
 .content-with-space-between {
     justify-content: space-between;
@@ -154,6 +165,15 @@ a {
     padding: 50px;
 }
 
+.got-it-bar {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #8B48BF;
+    padding: 50px;
+}
+
 .central-bar-content-title {
     width: 450px;
     height: 88px;
@@ -187,6 +207,29 @@ a {
     flex-wrap: wrap;
     gap: 200px;
 }
+
+.got-it-bar-content {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.got-it-bar-title {
+    width: 450px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+    /* or 41px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
 
 header {
     margin-top: 30px;
@@ -257,6 +300,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #FAFAFA;
+    padding-bottom: 50px;
 }
 
 .bg-box-internal {
@@ -286,18 +330,50 @@ header {
 }
 
 .mobile-title-style {
-    margin-top: 8%;
+    margin-top: 4%;
     gap: 10px;
     width: 600px;
+}
+
+.third-section-title{
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #242E53;
+    margin-top: 80px;
 }
 
 
 @media screen and (max-width: 500px) {
 
+    .got-it-bar-title {
+        width: 450px;
+        height: 88px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 114.6%;
+        /* or 41px */
+        text-align: center;
+        display: flex;
+        align-items: center;
+    
+        color: #FFFFFF;
+    }
+
+    .got-it-bar {
+        background-color: #3CDDF3;
+    }
+    
+
     .mobile-title-style {
         margin-top: 8%;
         gap: 10px;  
-        width: 600px;
+        width: 100%;
         padding-left: 50px;
     }
 
@@ -313,6 +389,7 @@ header {
     .burger {
         display: block;
     }
+    
 
     .central-bar {
         background: #3CDDF3;
@@ -333,6 +410,7 @@ header {
     .box-text {
         padding: 0px;
         margin-top:30px;
+        width: 100%;
     }
     
     .bg-box-content {
@@ -360,6 +438,10 @@ header {
         background: rgba(139, 72, 191, 0.3);
     }
 
+    .got-it-btn {
+        background: #232C50;
+        color: #FFFFFF;
+    }
 
 }
 
