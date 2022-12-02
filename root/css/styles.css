@@ -50,9 +50,9 @@ a {
 }
 
 .boton {
+    display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 10px;
     gap: 10px;
     width: 134px;
@@ -67,8 +67,12 @@ a {
     color: #fff;
 }
 
-#second-section {
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 150px;
+    flex-wrap: wrap;
 }
 
 #third-section {
@@ -85,7 +89,8 @@ a {
     align-items: center;
 }
 
-.content-center-header {
+.header {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 250px;
@@ -104,6 +109,7 @@ a {
 }
 
 .align-to-end {
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -111,28 +117,25 @@ a {
     flex-wrap: wrap;
 }
 
-.banner-legend {
+.second-section-advertising {
     width: 450px;
     height: 228px;
     justify-content: space-around;
-    gap: 20px;
+    gap: 50px;
 }
 
-.banner-legend h1 {
+.advertising-title {
     font-weight: 700;
     font-size: 50px;
     line-height: 114.6%;
-    /* or 57px */
-
     display: flex;
     align-items: center;
     text-align: right;
     letter-spacing: -0.035em;
-
     color: #232C50;
 }
 
-.banner-legend h4 {
+.advertising-text {
     font-weight: 500;
     font-size: 16.5584px;
     line-height: 157.1%;
@@ -143,6 +146,7 @@ a {
 }
 
 .central-bar {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -150,7 +154,7 @@ a {
     padding: 50px;
 }
 
-.central-bar h1 {
+.central-bar-content-title {
     width: 450px;
     height: 88px;
     font-weight: 700;
@@ -164,7 +168,7 @@ a {
     color: #FFFFFF;
 }
 
-.central-bar h4 {
+.central-bar-content-text {
     width: 450px;
     height: 88px;
     font-weight: 500;
@@ -178,7 +182,9 @@ a {
     color: #FFFFFF;
 }
 
-.central-bar-text {
+.central-bar-content {
+    display: flex;
+    flex-wrap: wrap;
     gap: 200px;
 }
 
@@ -221,6 +227,8 @@ header {
     align-items: center;
     letter-spacing: -0.015em;
     color: #323851;
+    padding-left: 30px;
+    
 }
 
 .box-header {
@@ -228,9 +236,10 @@ header {
 }
 
 .box-content {
-    gap: 5px;
-    width: 437px;
+    gap: 30px;
+    width: 700px;
     align-items: flex-start;
+    padding-left: 100px;
 }
 
 .box-text {
@@ -240,10 +249,13 @@ header {
     line-height: 26px;
     letter-spacing: -0.01em;
     color: #B3B2B7;
-    text-align: justify;
+    padding-left: 100px;
 }
 
 .bg-box-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FAFAFA;
 }
 
@@ -253,14 +265,48 @@ header {
     align-items: center;
 }
 
+.number-title-color {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px 0px  0px 30px;
+    gap: 10px;
+}
+
+.number-title-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #323851;
+    padding-left: 30px;
+}
+
+.monse {
+    margin-top: 8%;
+    gap: 10px;
+    width: 600px;
+}
+
+
 @media screen and (max-width: 500px) {
+
+    .monse {
+        margin-top: 8%;
+        gap: 10px;  
+        width: 600px;
+        padding-left: 50px;
+    }
 
     .paddle-img {
         margin-top: 10%;
         width: 80%;
     }
 
-    .header-nav, .contact-menu-btn {
+    .menu, #contact-menu-btn {
         display: none;
     }
 
@@ -272,7 +318,7 @@ header {
         background: #3CDDF3;
     }
 
-    .central-bar-text {
+    .central-bar-content {
         gap: 20px;
     }
 
@@ -285,17 +331,33 @@ header {
     }
     
     .box-text {
-        width: 300px;
+        padding: 0px;
+        margin-top:30px;
     }
     
     .bg-box-content {
+        display: block;
         background-color: #FFFFFF;
     }
 
     .box-content {
-        gap: 10px;
-        width: 80%;
+        gap: 40px;
+        width: 100%;
         align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    .box-title{
+        padding-left: 10px;
+    }
+
+    .line {
+        display: block;
+        color: #B3B2B7;
+    }
+
+    .number-title-color {
+        background: rgba(139, 72, 191, 0.3);
     }
 
 
