@@ -404,6 +404,63 @@ h5 {
 .players-btn {
     display: flex;
     justify-content: center;
+
+
+}
+
+.footer-style-color {
+    display: block;
+    background-color: black;
+    height: 100%;
+
+  
+}
+
+
+.logo-style {
+
+    display: inline;
+    padding: 4%;
+    margin-left: 5%;
+
+}
+
+.logo-image-style {
+    
+    display: inline;
+    flex: wrap;
+    padding: 4%;
+    gap: 3%;
+    margin-left: 5%;
+}
+
+.logoandimage {
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.nav-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items:center;
+    color: white;
+    flex: wrap;
+
+}
+
+.nav-style {
+    justify-content: center;
+    align-items: center;
+    display: inline;
+       
+}
+
+.first-nav-style {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     
 
 }
