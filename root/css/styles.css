@@ -387,7 +387,7 @@ header {
 
 .img-position {
     text-align: center;
-   
+    margin-top: -40px;
 
 }
 
@@ -399,6 +399,13 @@ h5 {
     align-items: center;
     letter-spacing: -0.01em;
     color: #3F4868;
+}
+
+.players-btn {
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 @media screen and (max-width: 500px) {
