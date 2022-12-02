@@ -285,7 +285,7 @@ header {
     padding-left: 30px;
 }
 
-.monse {
+.mobile-title-style {
     margin-top: 8%;
     gap: 10px;
     width: 600px;
@@ -294,7 +294,7 @@ header {
 
 @media screen and (max-width: 500px) {
 
-    .monse {
+    .mobile-title-style {
         margin-top: 8%;
         gap: 10px;  
         width: 600px;
