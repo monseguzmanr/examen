@@ -340,14 +340,66 @@ header {
     font-size: 39.2143px;
     line-height: 156.6%;
     display: flex;
-    align-items: center;
+    align-items:center;
     text-align: center;
     letter-spacing: -0.01em;
     text-align: center;
     color: #242E53;
     margin-top: 80px;
+    
 }
 
+.player-box{
+    display: flex;
+    left: 4.93%;
+    right: 64.17%;
+    top: 63.66%;
+    bottom: 28%;
+   
+}
+
+.box-position {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.players-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    
+}
+.player-text {
+    background-color: #FAFAFA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    width: 403px;
+    height: 100px;
+}
+
+.img-position {
+    text-align: center;
+   
+
+}
+
+h5 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #3F4868;
+}
 
 @media screen and (max-width: 500px) {
 
@@ -443,5 +495,8 @@ header {
         color: #FFFFFF;
     }
 
-}
+    .hidden-player {
+        display: none;
+    }
 
+}
