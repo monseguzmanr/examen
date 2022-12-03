@@ -413,13 +413,22 @@ h5 {
     background-color: black;
     height: 100%;
 
+
   
 }
 
+.different-color-logo {
+    
+    flex-direction:column;
+    display: block;
+    
+
+    gap: 0px;
+}
 
 .logo-style {
 
-    display: inline;
+    display: block;
     padding: 4%;
     margin-left: 5%;
 
@@ -434,12 +443,7 @@ h5 {
     margin-left: 5%;
 }
 
-.logoandimage {
-    display: inline;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
 
 .nav-list {
     display: inline-flex;
@@ -451,8 +455,7 @@ h5 {
 }
 
 .nav-style {
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     display: inline;
        
 }
@@ -460,9 +463,13 @@ h5 {
 .first-nav-style {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    
 
+}
+
+.second-nav-style {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 @media screen and (max-width: 500px) {
