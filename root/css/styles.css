@@ -370,7 +370,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #FAFAFA;
-    
+    flex-wrap: wrap;
 }
 .player-text {
     background-color: #FAFAFA;
