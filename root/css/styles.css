@@ -76,18 +76,16 @@ a {
 }
 
 .boton-form {
-
-    justify-content: center;
-    align-items: center;
-
     padding: 10px;
     gap: 10px;
-    
     width: 63px;
     height: 42px;
-    
-    background: #8B48BF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border-style: none;
 }
 
 .second-section {
@@ -478,7 +476,7 @@ h5 {
     width: 11%;
     flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .copyright {
@@ -487,12 +485,53 @@ h5 {
     margin-top: 80px;
 }
 
+.copyright-mobile {
+    display: none;
+}
+  
 .social-network-style {
     display: flex;
     justify-content: space-between;
 }
 
+#input-footer {
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    border-style: none;
+    margin-right: 9px;
+}
+
+#input-footer::placeholder {
+    color: #A0A0A0;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 @media screen and (max-width: 500px) {
+
+    .footer-contact {
+        order: -1;
+        margin-bottom: 15%;
+    }
+
+    #input-footer {
+        padding: 12px;
+        border-radius: 50px;
+        font-size: 13px;
+        border-style: none;
+        margin-right: 9px;
+        width: 300px;
+    }
+
+    form {
+        display: block;
+    }
 
     .footer-content{
         padding-top: 80px;
@@ -503,7 +542,7 @@ h5 {
 
     .social-network-style {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .footer-logos {
@@ -512,6 +551,7 @@ h5 {
         gap: 30px;
         padding: 15%;
         width: 100%;
+        order: 1;
     }
 
     .different-color-logo {
@@ -621,4 +661,15 @@ h5 {
         display: none;
     }
 
+    .copyright-mobile {
+        color: #8C8C94;
+        font-size: 12px;
+        margin-top: 20px;
+        display: flex;
+        order: 2;
+    }
+    
+    .copyright {
+        display: none;
+    }
 }
